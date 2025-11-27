@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hariesh Shunmugavel — Freelance Web Developer</title>
+  <meta name="description" content="Freelance web & mobile developer — PHP, Laravel, Angular, Node.js, Express, Flutter. E‑commerce, CRM, Payment integrations." />
+  <style>
+    /* Minimal, single-file, inline CSS portfolio */
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071026 0%,var(--bg) 100%);-webkit-font-smoothing:antialiased}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto}
+    a.logo{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+    .logo .dot{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:grid;place-items:center;font-weight:700}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-size:14px}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .hero{display:flex;gap:34px;align-items:center;padding:24px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);border-radius:14px}
+    .hero-left{flex:1}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{margin:0 0 18px;color:var(--muted);line-height:1.5}
+    .cta{display:inline-flex;gap:10px}
+    .btn{background:var(--accent);color:#03202b;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .ghost{border:1px solid rgba(255,255,255,0.06);padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none}
+    .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .hero-right{width:300px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:16px;border-radius:12px}
+    .profile{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:grid;place-items:center;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+
+    section{margin:26px 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .proj-img{height:140px;border-radius:8px;background:linear-gradient(90deg,#032a3a,#0b1220);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted)}
+
+    .about{display:flex;gap:20px;align-items:flex-start}
+    .about p{color:var(--muted)}
+
+    .contact-card{padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px}
+    form label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:120px}
+    footer{padding:18px 20px;text-align:center;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:880px){.hero{flex-direction:column}.hero-right{width:100%}.grid{grid-template-columns:repeat(3,1fr)}}
+
+    /* Tiny utilities */
+    .muted{color:var(--muted)}
+    .socials{display:flex;gap:10px}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">
+      <div class="dot">HS</div>
+      <div>
+        <div style="font-weight:700">Hariesh Shunmugavel</div>
+        <div style="font-size:12px;color:var(--muted)">Freelance Web & Mobile Developer</div>
+      </div>
+    </a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/hariesh-s-24633b18" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hi — I'm Hariesh. I build fast, reliable web & mobile apps.</h1>
+        <p class="lead">Full‑stack developer (PHP, Laravel, Angular, Node.js, Express, Flutter). I build e‑commerce platforms, CRM/ERP systems, admin dashboards and mobile apps. I also integrate payment gateways like PhonePe & Razorpay.</p>
+
+        <div class="cta">
+          <a class="btn" href="#contact">Let's work together</a>
+          <a class="ghost" href="#projects">See projects</a>
+        </div>
+
+        <div class="skills" aria-hidden="false">
+          <div class="skill">PHP</div>
+          <div class="skill">Laravel</div>
+          <div class="skill">Angular</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">Express.js</div>
+          <div class="skill">Flutter</div>
+          <div class="skill">Payment Gateways</div>
+        </div>
+
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile">
+          <div class="avatar">HS</div>
+          <div>
+            <div style="font-weight:700">Hariesh Shunmugavel</div>
+            <div style="font-size:13px;color:var(--muted)">Full‑stack developer — India</div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div style="font-size:12px;color:var(--muted)">Hourly rate</div>
+            <div style="font-weight:700;margin-top:8px">Negotiable</div>
+          </div>
+          <div class="card">
+            <div style="font-size:12px;color:var(--muted)">Availability</div>
+            <div style="font-weight:700;margin-top:8px">Part-time / Full projects</div>
+          </div>
+          <div class="card">
+            <div style="font-size:12px;color:var(--muted)">Languages</div>
+            <div style="font-weight:700;margin-top:8px">English, Tamil</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin:0 0 12px">Selected Projects</h2>
+      <div class="cards">
+
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="proj-img">E‑Commerce Platform (Laravel + Angular)</div>
+          <h3 style="margin:12px 0 6px">Kira Heritage — T‑shirt & Apparel</h3>
+          <p class="muted" style="margin:0">E‑commerce website with product management, coupon system, and single‑page checkout.</p>
+          <div class="meta">
+            <div class="tag">Laravel • Angular</div>
+            <div style="font-size:13px;color:var(--muted)">Live | GitHub</div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <div class="proj-img">Custom CRM Dashboard</div>
+          <h3 style="margin:12px 0 6px">CRM & Lead Management</h3>
+          <p class="muted" style="margin:0">Multi‑role CRM with dynamic forms, lead scoring and reports.</p>
+          <div class="meta">
+            <div class="tag">PHP • MySQL</div>
+            <div style="font-size:13px;color:var(--muted)">Private</div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <div class="proj-img">Flutter Mobile App</div>
+          <h3 style="margin:12px 0 6px">Food Delivery App</h3>
+          <p class="muted" style="margin:0">Customer app + vendor panel + admin dashboard. Payment integration included.</p>
+          <div class="meta">
+            <div class="tag">Flutter • Node.js</div>
+            <div style="font-size:13px;color:var(--muted)">PlayStore</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 style="margin:0 0 12px">Services I offer</h2>
+      <div class="cards">
+        <div class="card"><h3 style="margin:0 0 8px">Custom Web Applications</h3><p class="muted">Laravel, Node.js, Express.js backends with Angular frontends. Scalable, secure, and tested.</p></div>
+        <div class="card"><h3 style="margin:0 0 8px">E‑commerce Stores</h3><p class="muted">Custom carts, product variants, coupons, single‑page checkout, performance tuning.</p></div>
+        <div class="card"><h3 style="margin:0 0 8px">Mobile Apps (Flutter)</h3><p class="muted">Cross‑platform mobile apps with native performance and polished UIs.</p></div>
+        <div class="card"><h3 style="margin:0 0 8px">Payment Gateway Integrations</h3><p class="muted">PhonePe, Razorpay, Stripe integrations and verification flows.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 style="margin:0 0 12px">About me</h2>
+      <div class="about">
+        <div style="flex:1">
+          <p>I’m a full‑stack web developer with experience building production apps using PHP (Laravel), Angular, Node.js and Flutter. I focus on building maintainable code, clean UI and fast user experiences. I enjoy solving problems like checkout UX, payment flows, complex forms and dashboard analytics.</p>
+          <ul style="color:var(--muted)">
+            <li>5+ years building web & mobile apps</li>
+            <li>Experience with payments, shipping, and admin tools</li>
+            <li>Available for short & long term contracts</li>
+          </ul>
+        </div>
+        <div style="width:320px">
+          <div class="contact-card">
+            <h4 style="margin:0 0 8px">Contact</h4>
+            <p class="muted" style="margin:0 0 8px">Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+            <p class="muted" style="margin:0 0 8px">WhatsApp: <a href="https://wa.me/919000000000" target="_blank">+91 90000 00000</a></p>
+            <div class="socials" style="margin-top:8px">
+              <a href="https://www.linkedin.com/in/hariesh-s-24633b18" target="_blank" title="LinkedIn">in</a>
+              <a href="#" title="GitHub">GH</a>
+              <a href="#" title="Upwork">UP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 style="margin:0 0 12px">Get a quote</h2>
+      <div style="display:grid;grid-template-columns:1fr 340px;gap:18px">
+        <div class="card">
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project"></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:8px;">
+              <button type="submit" class="btn">Send message</button>
+              <a class="ghost" href="mailto:hello@yourdomain.com">Email me</a>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:12px">
+            <h4 style="margin:0 0 8px">How I work</h4>
+            <ol style="color:var(--muted);padding-left:18px;margin:0">
+              <li>Requirement & estimate</li>
+              <li>Design & prototype</li>
+              <li>Development (sprints)</li>
+              <li>Testing & deployment</li>
+            </ol>
+          </div>
+          <div class="card">
+            <h4 style="margin:0 0 8px">Deliverables</h4>
+            <p class="muted" style="margin:0">Source code, deployment instructions, basic support for 2 weeks, optional maintenance hourly plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="muted">© " + new Date().getFullYear() + " Hariesh Shunmugavel</div>
+        <div class="muted">Built with care • Available for hire</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple client-side form handler that opens the user's email client with the message
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var subject = encodeURIComponent('Project enquiry from ' + name);
+      var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      var mailto = 'mailto:hello@yourdomain.com?subject=' + subject + '&body=' + body;
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
